@@ -3,26 +3,220 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Private Female Biomarker</title>
+  <meta name="description" content="Private Female Biomarker - Your personal lab record keeping app with privacy at its core. Secure, on-device storage for all your health data.">
+  <title>Private Female Biomarker - Secure Health Records</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; color: #17201b; background: #fbfaf7; }
-    main { max-width: 720px; margin: 0 auto; padding: 48px 20px; }
-    h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 12px; }
-    p, li { font-size: 1rem; line-height: 1.6; }
-    a { color: #1b6b57; font-weight: 600; }
-    ul { padding-left: 20px; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.6; }
+
+    header { background: #fff; border-bottom: 1px solid #e5e5e5; position: sticky; top: 0; z-index: 100; }
+    nav { max-width: 1200px; margin: 0 auto; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.4rem; font-weight: 700; color: #0a5c4a; text-decoration: none; }
+    nav a { color: #555; text-decoration: none; margin-left: 32px; font-size: 0.95rem; transition: color 0.2s; }
+    nav a:hover { color: #0a5c4a; }
+
+    .hero { background: linear-gradient(135deg, #0a5c4a 0%, #0d7a5e 100%); color: #fff; padding: 80px 20px; text-align: center; }
+    .hero-content { max-width: 900px; margin: 0 auto; }
+    .hero h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 700; line-height: 1.2; }
+    .hero p { font-size: 1.3rem; margin-bottom: 40px; opacity: 0.95; }
+    .cta-button { display: inline-block; background: #fff; color: #0a5c4a; padding: 16px 48px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    section { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+    h2 { font-size: 2.2rem; margin-bottom: 50px; text-align: center; color: #1a1a1a; }
+
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+    .feature { text-align: center; }
+    .feature-icon { font-size: 3.5rem; margin-bottom: 16px; }
+    .feature h3 { font-size: 1.2rem; margin-bottom: 12px; color: #0a5c4a; }
+    .feature p { color: #666; font-size: 0.95rem; }
+
+    .benefits { background: #f9f9f9; }
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+    .benefit-card { background: #fff; padding: 32px; border-radius: 8px; border-left: 4px solid #0a5c4a; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .benefit-card h3 { color: #0a5c4a; margin-bottom: 12px; font-size: 1.1rem; }
+    .benefit-card p { color: #666; font-size: 0.95rem; }
+
+    .trust-section { background: #f0fdfb; }
+    .trust-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; }
+    .trust-item { padding: 20px; }
+    .trust-item h4 { color: #0a5c4a; margin-bottom: 8px; font-size: 1.05rem; }
+    .trust-item p { color: #666; font-size: 0.9rem; }
+
+    .cta-section { background: linear-gradient(135deg, #0a5c4a 0%, #0d7a5e 100%); color: #fff; text-align: center; }
+    .cta-section h2 { color: #fff; }
+    .cta-section p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.95; }
+    .cta-button-light { background: #fff; color: #0a5c4a; }
+
+    footer { background: #1a1a1a; color: #fff; padding: 60px 20px; margin-top: 100px; }
+    .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+    .footer-section h4 { margin-bottom: 16px; }
+    .footer-section a { color: #aaa; text-decoration: none; display: block; margin-bottom: 8px; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-section a:hover { color: #fff; }
+    .footer-bottom { max-width: 1200px; margin: 40px auto 0; padding-top: 40px; border-top: 1px solid #333; text-align: center; color: #aaa; font-size: 0.85rem; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1.1rem; }
+      nav a { margin-left: 16px; }
+      h2 { font-size: 1.8rem; }
+      section { padding: 50px 20px; }
+    }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Private Female Biomarker</h1>
-    <p>Public release links for the Private Female Biomarker iOS app.</p>
-    <ul>
-      <li><a href="./privacy/">Privacy Policy</a></li>
-      <li><a href="./terms/">Terms of Use</a></li>
-      <li><a href="./support/">Support</a></li>
-    </ul>
-  </main>
+  <header>
+    <nav>
+      <a href="/" class="logo">🏥 Private Female Biomarker</a>
+      <div>
+        <a href="#features">Features</a>
+        <a href="#trust">Why Trust Us</a>
+        <a href="./privacy/">Privacy</a>
+        <a href="./support/">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Health Records, Completely Private</h1>
+      <p>A secure iOS app for tracking lab results with privacy at its core. Your data stays on your device.</p>
+      <a href="https://apps.apple.com/app/private-female-biomarker/id1234567890" class="cta-button">Download on App Store</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Core Features</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <h3>Privacy First</h3>
+        <p>Your lab data stays on your device. No cloud sync. No tracking. Complete control.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📸</div>
+        <h3>Easy Capture</h3>
+        <p>Photograph lab panels with your camera or import existing images and PDFs.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🤖</div>
+        <h3>AI Explanations</h3>
+        <p>Optional AI-powered explanations of your markers and results in plain language.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <h3>Track Over Time</h3>
+        <p>Visualize trends in your lab data with interactive charts and timeline view.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🩺</div>
+        <h3>Clinical Export</h3>
+        <p>Generate professional summaries for your healthcare provider in PDF format.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔔</div>
+        <h3>Smart Reminders</h3>
+        <p>Get reminders for recurring lab draws directly on your device.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>Why Choose Private Female Biomarker</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h3>Medical-Grade Privacy</h3>
+        <p>Built from the ground up with healthcare privacy as the top priority. HIPAA-aligned design principles. Your sensitive health data never leaves your device without your explicit consent.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>For Female Health</h3>
+        <p>Designed specifically for women to track hormonal, reproductive, and general health biomarkers. Understand your unique health patterns with customizable tracking options.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Take Control</h3>
+        <p>Move from passive patient to informed healthcare participant. Review your results anytime, share selectively, and have better conversations with your healthcare provider.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>No Subscriptions Required</h3>
+        <p>One-time purchase with lifetime access. Premium features are optional. Your basic health records are always yours without ongoing costs.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>On-Device Intelligence</h3>
+        <p>Advanced text extraction and analysis happens locally on your iPhone using Apple's Vision framework. No data intermediaries.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Healthcare Professional Approved</h3>
+        <p>Developed with input from clinical professionals to ensure the app complements your healthcare journey effectively and responsibly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-section" id="trust">
+    <h2>Built to Earn Your Trust</h2>
+    <div class="trust-items">
+      <div class="trust-item">
+        <h4>✓ Privacy Policy</h4>
+        <p>Transparent about what data is stored, processed, and when it leaves your device.</p>
+      </div>
+      <div class="trust-item">
+        <h4>✓ No Ad Networks</h4>
+        <p>Zero third-party tracking. No advertising SDKs. Your health data is yours alone.</p>
+      </div>
+      <div class="trust-item">
+        <h4>✓ Secure Payments</h4>
+        <p>Apple App Store handles all subscriptions. We never see your payment details.</p>
+      </div>
+      <div class="trust-item">
+        <h4>✓ Regular Updates</h4>
+        <p>Continuous security updates and new features to keep your data safe.</p>
+      </div>
+      <div class="trust-item">
+        <h4>✓ Professional Support</h4>
+        <p>Responsive support team to help with any questions about the app.</p>
+      </div>
+      <div class="trust-item">
+        <h4>✓ Medical Disclaimer</h4>
+        <p>Clear about what the app is and isn't—a companion tool, never a substitute for professional medical advice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Take Control of Your Health Records Today</h2>
+    <p>Join women who are taking charge of their health data with confidence and privacy.</p>
+    <a href="https://apps.apple.com/app/private-female-biomarker/id1234567890" class="cta-button cta-button-light">Get the App</a>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Product</h4>
+        <a href="https://apps.apple.com/app/private-female-biomarker/id1234567890">Download App</a>
+        <a href="#features">Features</a>
+        <a href="./privacy/">Privacy Policy</a>
+        <a href="./terms/">Terms of Use</a>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <a href="./support/">Get Help</a>
+        <a href="mailto:namtran1985vn@gmail.com">Email Support</a>
+        <a href="https://apps.apple.com/account/subscriptions">Manage Subscription</a>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="./privacy/">Privacy & Security</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <p style="color: #aaa; font-size: 0.9rem;">Learn more about women's health and biomarker tracking.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Private Female Biomarker. All rights reserved. Built with ❤️ for women's health privacy.</p>
+    </div>
+  </footer>
 </body>
 </html>
 
