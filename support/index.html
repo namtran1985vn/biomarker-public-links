@@ -3,20 +3,176 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for Private Female Biomarker - Get help with your health tracking app.">
   <title>Support - Private Female Biomarker</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; color: #17201b; background: #fbfaf7; }
-    main { max-width: 720px; margin: 0 auto; padding: 48px 20px; }
-    p { font-size: 1rem; line-height: 1.6; }
-    a { color: #1b6b57; font-weight: 600; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.6; }
+
+    header { background: #fff; border-bottom: 1px solid #e5e5e5; position: sticky; top: 0; z-index: 100; }
+    nav { max-width: 1200px; margin: 0 auto; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.4rem; font-weight: 700; color: #0a5c4a; text-decoration: none; }
+    nav a { color: #555; text-decoration: none; margin-left: 32px; font-size: 0.95rem; transition: color 0.2s; }
+    nav a:hover { color: #0a5c4a; }
+
+    .hero { background: linear-gradient(135deg, #0a5c4a 0%, #0d7a5e 100%); color: #fff; padding: 60px 20px; text-align: center; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 12px; }
+    .hero p { font-size: 1.1rem; opacity: 0.95; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+    h2 { font-size: 1.6rem; margin: 40px 0 20px; color: #0a5c4a; border-bottom: 2px solid #e5e5e5; padding-bottom: 12px; }
+    h3 { font-size: 1.1rem; margin-top: 24px; margin-bottom: 12px; color: #0a5c4a; }
+
+    p { margin: 16px 0; font-size: 1rem; color: #333; }
+
+    a { color: #0a5c4a; font-weight: 500; text-decoration: none; border-bottom: 1px solid #0a5c4a; }
+    a:hover { color: #0d7a5e; }
+
+    .support-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 40px 0; }
+    .card { background: #f9f9f9; padding: 32px; border-radius: 8px; border-left: 4px solid #0a5c4a; }
+    .card h3 { margin-top: 0; }
+    .card p { margin-bottom: 16px; }
+    .card a { display: inline-block; background: #0a5c4a; color: #fff; padding: 10px 20px; border-radius: 4px; border: none; }
+    .card a:hover { background: #0d7a5e; }
+
+    .faq { margin: 40px 0; }
+    .faq-item { background: #f9f9f9; padding: 20px; margin-bottom: 12px; border-radius: 6px; cursor: pointer; }
+    .faq-item h4 { color: #0a5c4a; margin: 0; font-size: 1.05rem; display: flex; justify-content: space-between; align-items: center; }
+    .faq-item.open { background: #f0fdfb; border-left: 4px solid #0a5c4a; }
+    .faq-item.open p { display: block; margin-top: 12px; }
+    .faq-item p { display: none; color: #666; margin: 0; }
+    .toggle { font-weight: bold; }
+
+    .contact-section { background: #f0fdfb; padding: 40px; border-radius: 8px; text-align: center; margin: 40px 0; }
+    .contact-section h2 { border: none; color: #0a5c4a; }
+    .contact-section p { font-size: 1.1rem; }
+
+    footer { background: #1a1a1a; color: #fff; padding: 40px 20px; margin-top: 60px; text-align: center; }
+    footer a { color: #aaa; border: none; }
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.8rem; }
+      nav a { margin-left: 16px; }
+    }
   </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="/" class="logo">🏥 Private Female Biomarker</a>
+      <div>
+        <a href="/">Home</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/support/">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>How Can We Help?</h1>
+    <p>Get answers and support for Private Female Biomarker</p>
+  </section>
+
   <main>
-    <h1>Support</h1>
-    <p>For help with Private Female Biomarker, email <a href="mailto:namtran1985vn@gmail.com">namtran1985vn@gmail.com</a>.</p>
-    <p>For subscription cancellation or billing management, use <a href="https://apps.apple.com/account/subscriptions">Apple subscription settings</a>.</p>
+    <h2>Support Resources</h2>
+
+    <div class="support-cards">
+      <div class="card">
+        <h3>📧 Email Support</h3>
+        <p>Have a question or need help? Reach out to our support team. We typically respond within 24 hours.</p>
+        <a href="mailto:namtran1985vn@gmail.com">Send Email</a>
+      </div>
+
+      <div class="card">
+        <h3>🔧 Subscription Management</h3>
+        <p>Need to cancel, upgrade, or manage your subscription? Use Apple's subscription settings to control your purchase.</p>
+        <a href="https://apps.apple.com/account/subscriptions">Manage Subscriptions</a>
+      </div>
+
+      <div class="card">
+        <h3>🍎 Download App</h3>
+        <p>Ready to get started? Download Private Female Biomarker from the App Store and begin tracking your health.</p>
+        <a href="https://apps.apple.com/app/private-female-biomarker/id1234567890">Get App</a>
+      </div>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <h4>How much does the app cost? <span class="toggle">+</span></h4>
+        <p>The app offers both free and premium features. Basic health record tracking is available for free. Premium features require a subscription, which you can manage or cancel anytime through Apple's App Store.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Does my data sync to the cloud? <span class="toggle">+</span></h4>
+        <p>No. Private Female Biomarker stores all your data exclusively on your iPhone. Your health information never syncs to cloud servers unless you explicitly export it yourself. This is by design—complete privacy and control.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Can I export my data? <span class="toggle">+</span></h4>
+        <p>Yes! You can export your complete health records as JSON, generate a professional PDF summary for your doctor, export charts, or share individual lab reports. All exports are initiated by you and sent only where you choose.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>What if I lose my phone? <span class="toggle">+</span></h4>
+        <p>Since your data is stored only on your device, you should back up your iPhone regularly through iCloud or your computer. When you restore to a new device, your data will be available if you've enabled backups. We recommend regular exports as an additional safety measure.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Is the AI explanation feature private? <span class="toggle">+</span></h4>
+        <p>Yes. When you use AI explanations, only structured biomarker data (names, values, ranges) is sent—not your original files, notes, or personal information. This data is processed securely and deleted immediately after generating your explanation.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Does the app track me? <span class="toggle">+</span></h4>
+        <p>Absolutely not. We don't use any tracking SDKs, analytics services, or advertising networks. We have no way to know how you use the app beyond what you choose to tell us. Your privacy is protected by design.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Can I use this app with my doctor? <span class="toggle">+</span></h4>
+        <p>Yes! The app includes a "Clinician PDF" export feature that generates a professional summary you can share with your healthcare provider. However, remember that the app is a companion tool, not a substitute for professional medical advice.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>What happens if I delete the app? <span class="toggle">+</span></h4>
+        <p>If you delete the app without backing up your data, your health records stored on that device will be deleted. Make sure to export your important records before deleting the app if you want to keep them.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Is my data encrypted? <span class="toggle">+</span></h4>
+        <p>Yes. Your data is encrypted at rest using iOS security standards. When you optionally use AI features, data in transit uses industry-standard encryption. Your privacy is protected both on your device and in transit.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>How do I contact you with feedback? <span class="toggle">+</span></h4>
+        <p>We'd love to hear from you! Email us at namtran1985vn@gmail.com with your feedback, feature requests, or bug reports. We read every message and use your input to improve the app.</p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h2>Still Need Help?</h2>
+      <p>Our support team is here to assist you.</p>
+      <p style="margin-top: 16px;"><strong>Email:</strong> <a href="mailto:namtran1985vn@gmail.com" style="border: none; color: #0a5c4a;">namtran1985vn@gmail.com</a></p>
+      <p><strong>Response time:</strong> Usually within 24 hours</p>
+    </div>
   </main>
+
+  <footer>
+    <p>&copy; 2026 Private Female Biomarker. All rights reserved.</p>
+    <p><a href="/">Home</a> • <a href="/privacy/">Privacy Policy</a> • <a href="/terms/">Terms of Use</a> • <a href="/support/">Support</a></p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('open');
+        const toggle = item.querySelector('.toggle');
+        toggle.textContent = item.classList.contains('open') ? '−' : '+';
+      });
+    });
+  </script>
 </body>
 </html>
 
