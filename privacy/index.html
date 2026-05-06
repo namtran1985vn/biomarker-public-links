@@ -67,7 +67,7 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: April 27, 2026</div>
+    <div class="updated">Last updated: May 6, 2026</div>
 
     <div class="highlight">
       <strong>Your privacy is our top priority.</strong> Private Female Biomarker is built on a simple principle: your health data belongs to you and stays on your device. This policy explains exactly how we handle your information.
@@ -79,10 +79,10 @@
         <li><a href="#data-on-device">Data Stored on Your Device</a></li>
         <li><a href="#permissions">Permissions & Access</a></li>
         <li><a href="#on-device">On-Device Processing</a></li>
-        <li><a href="#ai-features">Optional AI Features</a></li>
+        <li><a href="#openai">Third-party AI Service (OpenAI)</a></li>
         <li><a href="#exports">Exports and Sharing</a></li>
         <li><a href="#payments">Payments</a></li>
-        <li><a href="#tracking">Tracking & Analytics</a></li>
+        <li><a href="#tracking">Analytics, Tracking & Third-Party SDKs</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
@@ -120,16 +120,8 @@
       <li>You can export or delete your data at any time</li>
     </ul>
 
-    <h2 id="ai-features">Optional AI Features</h2>
-    <p>If you choose to use AI-powered explanations of your lab results, the app sends only the minimum necessary information to generate that explanation:</p>
-    <ul>
-      <li>Biomarker names and values</li>
-      <li>Units and reference ranges</li>
-      <li>Test date and sample type</li>
-      <li>Age and biological sex (for context)</li>
-    </ul>
-    <p><strong>What we do NOT send:</strong> Your source file, OCR-extracted text, personal notes, lab name, or any other identifying information. The request is processed by our secure proxy service and then deleted immediately after.</p>
-    <p>This feature is entirely optional. Basic health record tracking works perfectly without it.</p>
+    <h2 id="openai">Third‑party AI Service (OpenAI)</h2>
+    <p>The "AI explanation" feature is optional. When you tap Create explanation on a lab draw, the app shows a confirmation alert and only after you tap Send to OpenAI transmits the following through our backend proxy (a Cloudflare Worker that exists solely to keep our OpenAI API key off your device): marker names, values, units, reference ranges, draw date, source type, and the optional women's‑context fields you set on that draw (cycle phase, life stage, hormone context). The following are never sent: the source PDF or photo, the OCR text, the lab name, your notes, your name, your email, or any account or device identifier. The app has no user account system. The recipient is OpenAI (<a href="https://openai.com">https://openai.com</a>), which processes the request under the OpenAI API Data Usage Policies (<a href="https://openai.com/policies/api-data-usage-policies">https://openai.com/policies/api-data-usage-policies</a>); API inputs are not used to train OpenAI's models by default, providing protection equivalent to what this policy describes. We do not retain request bodies on the proxy.</p>
 
     <h2 id="exports">Exports and Sharing</h2>
     <p>When you choose to export or share your data, you control exactly what leaves your device:</p>
@@ -150,17 +142,18 @@
       <li>Manage subscriptions anytime through your Apple account settings</li>
     </ul>
 
-    <h2 id="tracking">Tracking & Analytics</h2>
-    <p><strong>Zero tracking.</strong> Private Female Biomarker does not:</p>
+    <h2 id="tracking">Analytics, Tracking & Third‑Party SDKs</h2>
+    <p><strong>Zero analytics. Zero tracking. Zero third‑party SDKs except OpenAI.</strong> Private Female Biomarker does not:</p>
     <ul>
+      <li>Use analytics services of any kind</li>
       <li>Track you across other apps or websites</li>
       <li>Use Google Analytics, Segment, Mixpanel, or similar services</li>
       <li>Include advertising networks or SDKs</li>
       <li>Build a profile of your behavior</li>
       <li>Share data with third parties for marketing</li>
       <li>Use cookies for tracking purposes</li>
+      <li>Include third‑party SDKs other than OpenAI for the AI explanation feature described above</li>
     </ul>
-    <p>We may collect anonymized, aggregated usage data to improve the app, but never in a way that identifies you.</p>
 
     <h2>Security</h2>
     <p>Your data security is paramount:</p>
@@ -194,4 +187,3 @@
   </footer>
 </body>
 </html>
-
